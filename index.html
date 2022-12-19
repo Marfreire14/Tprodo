@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="./css/style.css">
+
+    <title>Document</title>
+
+
+</head>
+
+<body>
+    <header class="cabecalho">
+       <img src="./img/tprodo.jpeg" alt="Logo Tprodo">
+    </header>
+    <main>  
+        <div class="chamada">
+
+            <div class="container cadastro">
+
+                <h1 class="h">Cadastro</h1>
+
+                <div class="box">
+                    <form class="form" id="get-form">
+
+                        <label for="tag">Número da TAG:</label>
+                        <input id="tag" name="tag" required type="text" placeholder="TAG" onfocus="this.value='';" />
+                        <input type="submit" value="Buscar" />
+
+                        <div class="container-dados" id="container-dados">
+                            <label for="">Status:</label>
+                            <p id="status"></p>
+                            <label for="">Placa do Veiculo:</label>
+                            <p id="placa"></p>
+                            <label for="">Data da Entrada:</label>
+                            <p id="data"></p>
+                            <label for="">Hora da Entrada:</label>
+                            <p id="hora"></p>
+                            <label for="">ID</label>
+                            <p id="idtpesagens" name="idtpesagens"></p>
+                        </div>
+                        
+                        <label>Confirmar Descarregamento</label>
+                        <button onclick="carregar()" type="button" id="botao">Confirmar</button>
+
+
+                    </form>
+
+                </div>
+
+            </div>
+
+        </div>
+    </main>
+
+    <footer>
+
+    </footer>
+    <script src="/index.js"></script>
+</body>
+
+</html>
